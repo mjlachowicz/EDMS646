@@ -1,4 +1,4 @@
-packages646 <- list('tidyverse','ggplot2','multcomp','car','effectsize','sjstats','emmeans','lme4','moments','qqplotr','DescTools')
+packages646 <- c('tidyverse','ggplot2','multcomp','car','effectsize','sjstats','emmeans','lme4','moments','qqplotr','DescTools')
 
 new.packages <- packages646[!(packages646 %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
