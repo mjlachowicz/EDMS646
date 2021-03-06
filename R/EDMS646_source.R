@@ -3,6 +3,8 @@ packages646 <- c('tidyverse','ggplot2','multcomp','car','effectsize','sjstats','
 new.packages <- packages646[!(packages646 %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
+rm(ls('packages646','new.packages'))
+
 library(tidyverse)
 library(ggplot2)
 library(qqplotr)
